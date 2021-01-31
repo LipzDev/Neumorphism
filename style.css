@@ -1,0 +1,29 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.container{
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+/* ITEM */
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #fafcff;
+}
+
+.box-item{
+   background-color: #ffffff;
+   width: 350px;
+   height: 700px;
+   border-radius: 20px;
+   box-shadow: 1px 5px 12px rgba(201, 201, 201, 0.315);
+
+   backdrop-filter: blur(8px);
+}
