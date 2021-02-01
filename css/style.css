@@ -10,6 +10,24 @@
    margin: 0 auto;
 }
 
+:root{
+   --cor-light-1: #2e2e2e;
+   --cor-light-2: #3b3b3b;
+   --cor-light-3: rgb(36, 36, 36);   
+   --cor-light-4: rgba(0, 0, 0, 0.568);
+   --cor-light-5: rgb(51, 51, 51);
+   --cor-light-6: rgb(184, 132, 253);
+   --cor-light-7: rgb(212, 212, 212);
+
+   --cor-light-1: #ecf0f5;
+   --cor-light-2: #e1e9f1;
+   --cor-light-3: #edf1f5;   
+   --cor-light-4: rgba(163, 163, 163, 0.863);
+   --cor-light-5: rgb(224, 224, 224);
+   --cor-light-6: rgb(39, 52, 94);
+   --cor-light-7: rgb(56, 56, 56);
+}
+
 /* ITEM */
 
 body{
@@ -22,13 +40,12 @@ body{
 }
 
 .box-item{
-   background-color: #e9eef3;
+   background-color: var(--cor-light-1);
    width: 350px;
    height: 700px;
    border-radius: 20px;
-   box-shadow: 5px 0px 12px rgba(170, 166, 166, 0.205);
+   box-shadow: 5px 0px 12px rgba(170, 231, 255, 0.205);
 
-     
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -46,51 +63,68 @@ body{
 .button-start{
    display: flex;
    align-items: center;
+
    border-radius: 8px;
    width: 65px;
    height: 34px;
-   background-color: #e1e9f1;
-   box-shadow: inset 1px 1px 3px rgb(185, 185, 185);
-}
 
-.button-start-active{
-   justify-content: flex-end;
-}/*Classe ativa com javascript*/
+   transition: 0.5s;
+   background-color: var(--cor-light-1);
+   box-shadow: inset 1px 1px 3px var(--cor-light-4);
+}
 
 .button-select{
    border-radius: 8px;
    width: 28px;
    height: 28px;
-   background-color: #edf1f5;
+   background-color: var(--cor-light-3);
    cursor: pointer;
-   margin-left: 2px;
-   border: 1px solid #ccc;
-   box-shadow: 1px 0px 6px rgba(204, 204, 204, 0.568);
+   margin: 0 2px;
+   border: 1px solid var(--cor-light-3);
+   box-shadow: 1px 0px 6px var(--cor-light-4);
 
    display: flex;
    align-items: center;
    justify-content: center;
+
+   position: relative;
+   left: 0px;
+   transition: 0.5s;
 }
 
 .button-select i{
-   transform: rotate(0);
-   /* SERA ADICIONADO COM JAVASCRIPT transform: rotate(180deg); */
-   color: rgb(73, 73, 73);
+   transform: rotate(0);  
+   color: var(--cor-light-7);
 }
+
+/* Classe ativa com javascript */
+
+.button-select-active{
+   position: relative;
+   left: 31px;
+   transition: 0.5s;
+}
+
+.button-select-active i{
+   transform: rotate(180deg);
+}
+
+/* --------------------------- */
+
 
 .button h1{
    margin-left: 20px;
    font-size: 1.4em;
    font-weight: 300;
-   color: rgb(21, 45, 82);
+   color: var(--cor-light-6);
 }
 
 /* INFO */
 
 .info{
-   background-color: #e1e9f1;
-   box-shadow: -5px -5px 7px rgb(243, 246, 247), 
-   5px 5px 8px  rgb(222, 226, 228);  
+   background-color: var(--cor-light-2);
+   box-shadow: -5px -5px 7px var(--cor-light-3), 
+   5px 5px 8px var(--cor-light-5);  
    width: 90%;
    height: 60px;
    border-radius: 15px; 
@@ -105,19 +139,19 @@ body{
    display: flex;
    align-items: center;
    margin-left: 30px;
-   color: rgb(73, 73, 73);
+   color: var(--cor-light-7);
 }
 
 .info-text p:last-child{
-   color: rgb(21, 45, 82);
+   color: var(--cor-light-6);
    margin-left: 30px;
    font-weight: 600;
 }
 
 .circle-arrow{
-   background-color: #e1e9f1;
-   box-shadow: -5px -5px 7px rgb(243, 246, 247), 
-   5px 5px 8px  rgb(222, 226, 228);
+   background-color: var(--cor-light-2);
+   box-shadow: -5px -5px 7px var(--cor-light-3), 
+   5px 5px 8px var(--cor-light-5);  
    padding: 10px;
    width: 20px;
    height: 20px;
@@ -131,7 +165,7 @@ body{
 }
 
 .circle-arrow i{
-   color: rgb(73, 73, 73);
+   color: var(--cor-light-7);
 }
 
 /* CIRCLE */
@@ -142,9 +176,9 @@ body{
    border-radius: 50%;
    margin: 50px 0;
 
-   background-color: #e1e9f1;
-   box-shadow: -5px -5px 7px rgb(243, 246, 247), 
-   5px 5px 8px  rgb(222, 226, 228);
+   background-color: var(--cor-light-2);
+   box-shadow: -5px -5px 7px var(--cor-light-3), 
+   5px 5px 8px var(--cor-light-5);  
 
    display: flex;
    align-items: center;
@@ -155,10 +189,9 @@ body{
    width: 220px;
    height: 220px;
    border-radius: 50%;
-
-   background-color: #e2e7ee;
-   box-shadow: inset -5px -5px 7px rgb(243, 246, 247), 
-   inset 5px 2px 8px  rgb(222, 226, 228);
+  
+   box-shadow: inset -5px -5px 7px var(--cor-light-3), 
+   inset 5px 2px 8px var(--cor-light-5);
 
    display: flex;
    align-items: center;
@@ -170,14 +203,13 @@ body{
    height: 170px;
    border-radius: 50%;
    
-   box-shadow: 5px 5px 1px rgb(222, 226, 228),  
-     -5px -5px 12px rgb(243, 246, 247);
+   box-shadow: 1px 1px 1px var(--cor-light-3),  
+     -5px -5px 12px var(--cor-light-5);
 
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 
 .circle-center img{
    max-width: 100%;
@@ -185,10 +217,7 @@ body{
 
 /* RECTANGLE */
 
-.rectangle{
-   background-color: #e1e9f1;
-   box-shadow: -5px -5px 7px rgb(243, 246, 247), 
-   5px 5px 8px  rgb(222, 226, 228);  
+.rectangle{ 
    width: 90%;
    height: 80px;
    border-radius: 15px; 
@@ -203,9 +232,9 @@ body{
    height: 70px;
    border-radius: 15px;
 
-   background-color: #e1e9f1;
-   box-shadow: -5px -5px 7px rgb(243, 246, 247), 
-   5px 5px 8px  rgb(222, 226, 228); 
+   background-color: var(--cor-light-2);
+   box-shadow: -2px -2px 7px var(--cor-light-3), 
+   2px 2px 8px var(--cor-light-5); 
 
    display: flex;
    align-items: center;
@@ -215,10 +244,7 @@ body{
 
 .text-1{
    cursor: pointer;
-}
-
-.text-1 i{
-   color: rgb(73, 73, 73);
+   color: var(--cor-light-7);
 }
 
 .number-1{
@@ -227,7 +253,7 @@ body{
 
 .number-1 p, span{
    font-weight: 600;
-   color: rgb(21, 45, 82);
+   color: var(--cor-light-6);
 }
 
 /* MENU */
@@ -246,20 +272,20 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   color: rgb(73, 73, 73);
+   color: var(--cor-light-7);
    font-size: 1.2em;
 
    border-radius: 15px;
 
-   background-color: #e1e9f1;
-   box-shadow: -5px -5px 7px rgb(243, 246, 247), 
-   5px 5px 8px  rgb(222, 226, 228); 
+   background-color: var(--cor-light-2);
+   box-shadow: -5px -5px 7px var(--cor-light-3), 
+   5px 5px 8px var(--cor-light-5); 
    cursor: pointer;
 }
 
 .menu-item-actived{
-   background-color: #e1e9f1;
-   box-shadow: inset -1px -1px 7px rgb(172, 172, 172), 
-    5px 1px 7px  rgb(255, 255, 255); 
-   color: rgb(21, 45, 82);
-}/* Classe ativa com javascript */
+   background-color: var(--cor-light-2);
+   box-shadow: inset -5px -5px 12px var(--cor-light-2), 
+    inset 8px 5px 7px  var(--cor-light-4); 
+    color: var(--cor-light-6);
+}
