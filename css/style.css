@@ -246,6 +246,10 @@ body{
    color: var(--cor-6);
 }
 
+.number-1 p{
+   font-size: 0.8em;
+}
+
 /* MENU */
 
 .menu{
