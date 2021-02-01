@@ -53,6 +53,10 @@ body{
    box-shadow: inset 1px 1px 3px rgb(185, 185, 185);
 }
 
+.button-start-active{
+   justify-content: flex-end;
+}/*Classe ativa com javascript*/
+
 .button-select{
    border-radius: 8px;
    width: 28px;
@@ -174,11 +178,12 @@ body{
    justify-content: center;
 }
 
+
 .circle-center img{
-   max-width: 150px;
+   max-width: 100%;
 }
 
-/* Rectangle */
+/* RECTANGLE */
 
 .rectangle{
    background-color: #e1e9f1;
@@ -251,3 +256,10 @@ body{
    5px 5px 8px  rgb(222, 226, 228); 
    cursor: pointer;
 }
+
+.menu-item-actived{
+   background-color: #e1e9f1;
+   box-shadow: inset -1px -1px 7px rgb(172, 172, 172), 
+    5px 1px 7px  rgb(255, 255, 255); 
+   color: rgb(21, 45, 82);
+}/* Classe ativa com javascript */
