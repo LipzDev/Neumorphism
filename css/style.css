@@ -71,7 +71,7 @@ body{
    height: 28px;
    background-color: var(--cor-3);
    cursor: pointer;
-   margin: 0 2px;
+   margin-left: 1.8px;
    box-shadow: 1px 0px 6px var(--cor-4);
 
    display: flex;
